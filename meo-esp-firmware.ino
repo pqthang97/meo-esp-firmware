@@ -11,6 +11,7 @@
 const char *default_mqtt_server = "10.31.17.183";
 const char *default_mqtt_port = "1883";
 const char *device_id = "team09_2";
+const unsigned char device_db_id = 1;
 
 // ==============================================
 
@@ -282,7 +283,7 @@ inline unsigned char Virtual_U4()
 
 inline unsigned char Virtual_U5()
 {
-  return 1;
+  return device_db_id;
 }
 
 /////////////////////////////// Function input/////////////////////
